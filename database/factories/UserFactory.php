@@ -22,14 +22,6 @@ class UserFactory extends Factory
      */
     public function definition()
     {
-        return [
-            'name' => 'sakib',
-            'designation' => "Software Engineer",
-            'address' => $this->faker->streetAddress(),
-            'phone_number' => $this->faker->unique()->phoneNumber(),
-            'password' => bcrypt('123456'),
-            'remember_token' => Str::random(10),
-        ];
     }
 
     /**
